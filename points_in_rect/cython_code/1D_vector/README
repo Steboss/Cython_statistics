@@ -1,0 +1,12 @@
+c_code:  main code written in C
+
+Makefile: make file to compile the Cython code
+
+rectangle.py:  Python script to call the Cython code
+
+rect_in.c : Cython compiled code
+
+rect_in.so: dynamic library of the compiled Cython code, usable as a Python module
+
+rect_in.pyx: Cython code
+

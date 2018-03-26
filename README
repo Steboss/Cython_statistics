@@ -1,0 +1,11 @@
+Cython: the best of both worlds
+
+Cython mixes C and Python together, to give oyu an overall speed up and improvement
+of your code.
+Here I am showing some examples on how to use it:
+
+- points_in_rect: in this case we are generating random points and measure if they are within
+                  or out N rectangles
+
+- confidence_test: here we are computing the population for R2, mean-unsigned-error and Kendall tau for a list of 
+                  values, compared to "real" values, by bootstrapping              

@@ -1,0 +1,20 @@
+In this case we want to compute the statistical population for three 
+statistical indicators:
+the correlation coefficient R2
+the mean-unsigned-error MUE
+and the Kendall tau 
+for a list of "computed values" over "real values"
+
+In this case it is interesting to notice that we have to know which is the best
+way to implement the C code.
+As a matter of fact the Kendall tau is not optimized, namely it is not using 
+a mergesort algorithm, thus for "computed values" list with more than 50 items
+the computation will be quite expensive.
+
+c_code: main routine written in C
+confidence.py : Python script to call the Cython code
+experimental.csv and predictions.csv : list of "real values" and "computed values"
+Makefile : make file to compile the Cython code
+perturb.c : compiled Cython code
+perturb.pyx: Cython code
+perturb.so: dynamic library, which can be imported in Python
